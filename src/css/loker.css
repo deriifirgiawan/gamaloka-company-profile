@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #FF8B13;
+  --secondary-color: #EBEBEB;
+  --highlight-color: #FFF4E9;
+  --text-color: #222222;
+  --subtext-color: #737373;
+  --font-family: "Montserrat", sans-serif;
+  --font-bold: bold;
+  --font-size-small: 12px;
+  --font-size-medium: 14px;
+  --font-size-large: 16px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  --font-size-xxxl: 48px;
+  --base-spacing: 16px;
+  --border-radius: 8px;
+  --box-shadow: 0px 0px 24px 0px #22222214;
+}
+
+.section-content.section-job {
+  margin-top: 92px;
+}
+
+.section-search-card-container {
+  position: relative;
+}
+
+.section-search-card-wrap {
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  bottom: -40px;
+}
+
+.section-search-card {
+  background-color: #fff;
+  border-radius: var(--base-spacing);
+  box-shadow: var(--box-shadow);
+  padding: 12px;
+  margin-right: 24px;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.container-input {
+  position: relative;
+  width: 65%;
+}
+
+.section-search-action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 35%;
+}
+
+.section-search-action-select {
+  width: 75%;
+}
+
+.section-search-action-button {
+  width: 25%;
+  margin-top: 28px;
+}
+
+.icon-search {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+}
+
+.section-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-filter-select {
+  width: 25%;
+}
+
+.section-content-job {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* Mobile Version */
+@media (max-width: 480px) {
+  .section-content-job {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-search-card {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .section-search-card-wrap {
+    left: 8px;
+    right: 8px;
+    bottom: -132px;
+  }
+
+  .container-input {
+    width: 100%;
+  }
+
+  .section-search-action {
+    width: 100%;
+  }
+
+  .section-content.section-job {
+    margin-top: 172px;
+  }
+
+  .section-filter {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .section-filter-select {
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+
+/* Tablet Version */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section-content-job {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
