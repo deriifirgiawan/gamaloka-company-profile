@@ -328,10 +328,10 @@ a, button {
   color: #222222;
 }
 
-.navbar .gl-container {
+/* .navbar .gl-container {
   display: flex;
-  justify-content: space-between !important;
-}
+  justify-content: space-between;
+} */
 
 .btn-menu {
   background-color: #EBEBEB;
@@ -445,6 +445,7 @@ a, button {
   .btn-medium {
     font-size: 14px;
   }
+  
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
